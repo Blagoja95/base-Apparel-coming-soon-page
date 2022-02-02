@@ -1,0 +1,117 @@
+:root{
+    /* ## Colors
+
+### Primary */
+
+--Desaturated-Red: hsl(0, 36%, 70%);
+--Soft-Red: hsl(0, 93%, 68%);
+
+/* ### Neutral */
+
+--Dark-Grayish-Red: hsl(0, 6%, 24%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1;
+}
+
+.main-section{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-side{
+    /* background: url('../images/hero-desktop.jpg') no-repeat; */
+    align-self: center;
+    height: 100%;
+}
+
+.right-side-hero{
+}
+
+.left-side{
+    padding: 6rem 17rem 17rem 17rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url(./images/bg-pattern-desktop.svg), linear-gradient( 135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+.img-logo{
+    width: 158px;
+    height: 33px;
+}
+.left-side-inner{
+    width: 70%;
+}
+
+.tite{
+    text-transform: uppercase;
+    font-size: 8rem;
+    line-height: 1.1;
+    margin-bottom: 3rem;
+    color: var(--Dark-Grayish-Red);
+    font-weight: 600;
+    letter-spacing: 15px;
+}
+
+.higlight{
+    font-weight: 300;
+    color: var(--Desaturated-Red) !important;
+}
+
+.txt{
+    line-height: 1.5;
+    color: var(--Desaturated-Red);
+    margin-bottom: 3rem;
+}
+
+.form-email{
+    position: relative;
+    width: 44rem;
+}
+
+.input-email{
+    width: inherit;
+    height: 6rem;
+    border-radius: 25px;
+    padding-left: 30px;
+    border: 2px solid var(--Desaturated-Red);
+}
+
+/* .input-email:focus  {
+    outline-color: red;
+  } */
+
+.btn--form{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateX(50%);
+    width: 10rem;
+    height: 6rem;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.138);
+}
+
+.btn--form:hover{
+    background-image: linear-gradient(0deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.138);
+}
