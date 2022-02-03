@@ -29,33 +29,36 @@ body{
 }
 
 .main-section{
-    height: 100%;
-    width: 100%;
+    min-height: 100vh;
     display: flex;
     justify-content: space-between;
 }
 
-.right-side{
-    /* background: url('../images/hero-desktop.jpg') no-repeat; */
-    align-self: center;
-    height: 100%;
-}
 
 .right-side-hero{
+    width: 40%;
+    background-image: url('../images/hero-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .left-side{
+    width: 60%;
     padding: 6rem 17rem 17rem 17rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    background: url(./images/bg-pattern-desktop.svg), linear-gradient( 135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    justify-content: space-around;
+    background-image: url(./images/bg-pattern-desktop.svg);
 }
-
+.bg--mobile{
+    display: none;
+}
 .img-logo{
     width: 158px;
     height: 33px;
 }
+
 .left-side-inner{
     width: 70%;
 }
@@ -93,6 +96,22 @@ body{
     padding-left: 30px;
     border: 2px solid var(--Desaturated-Red);
 }
+
+input:focus {
+    border-width: 2px;
+    box-shadow: 0px 0px 10px hsla(0, 36%, 70%, 0.5);
+    outline: none;
+  }
+    .icon-error{
+        display: none;
+        position: absolute;
+        right:0;
+        bottom: 0;
+        transform: translate(-125px, -75%);
+    }
+
+        /* border: 2px solid hsl(0, 93%, 68%); */
+    /* ERROR BORDER  */
 
 /* .input-email:focus  {
     outline-color: red;

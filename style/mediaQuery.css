@@ -1,3 +1,92 @@
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1700px) {
+    .left-side-inner{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .left-side {
+        padding: 6rem 10rem 17rem 10rem;
+    }
+
+    .tite{
+        font-size: 6rem;
+    }
+
+    .form-email{
+        width: 30rem;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .main-section{
+        display: block;
+    }
+
+    .right-side-hero{
+        display: none;
+        background-image: none;
+    }
+
+    .left-side{
+        padding: 0;
+        width: 100%;
+        gap: 3rem;
+        text-align: center;   
+    }
+
+    .img-logo-link{
+        align-self: flex-start;
+        margin: 3rem 0 0 6rem;  
+    }
+
+    .txt{
+        width: 80%;
+    }
+
+    .bg--mobile{
+        display: block;
+    }
+
+    .btn--form{
+        transform: translateX(1%);
+    }
+    
+    .left-side-inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .form-email{
+        width: 33rem;
+        margin-bottom: 3rem;
+    }
+
     
 }
+
+@media screen and (max-width: 400px) {
+    html{
+        font-size: 50%;
+    }
+    .form-email{
+        width: 34rem;
+    }
+
+    .tite{
+        font-size: 4rem;
+    }
+
+    .input-email{
+        height: 5rem;
+    }
+
+    .btn--form{
+        width: 6rem;
+        height: 5rem;
+    }
+}
+
