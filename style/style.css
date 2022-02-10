@@ -101,21 +101,31 @@ input:focus {
     border-width: 2px;
     box-shadow: 0px 0px 10px hsla(0, 36%, 70%, 0.5);
     outline: none;
-  }
-    .icon-error{
-        display: none;
-        position: absolute;
-        right:0;
-        bottom: 0;
-        transform: translate(-125px, -75%);
-    }
+}
 
-        /* border: 2px solid hsl(0, 93%, 68%); */
-    /* ERROR BORDER  */
+.icon-error{
+    display: none;
+    position: absolute;
+    right:0;
+    bottom: 0;
+    transform: translate(-125px, -75%);
+}
 
-/* .input-email:focus  {
-    outline-color: red;
-  } */
+/* ERROR BORDER ACTIVE  */
+
+.active .icon-error{
+    display: inline-block;
+}
+
+.active .input-email{
+border: 2px solid hsl(0, 93%, 68%);
+
+}
+
+/* When email is valid */
+.passed .input-email{
+border: 2px solid lightgreen;
+}
 
 .btn--form{
     position: absolute;
